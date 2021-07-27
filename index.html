@@ -24,12 +24,10 @@
       }
     </style>
   </head>
-  <body>
+  <body onload = "clrForm();">
     <div class="container">
       <section class="text-area">
-        <h1 class="main-head">
-          Learn to code by watching others
-        </h1>
+        <h1 class="main-head">Learn to code by watching others</h1>
         <p class="main-text">
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
@@ -40,30 +38,87 @@
         <div class="top-bar">
           <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
         </div>
-        <form onsubmit="verify();">
-          <div class="input-container">
-            <input
-              type="text"
-              name="fname"
-              id="fname"
-              placeholder="First Name"
-            />
+        <form onsubmit="verify();" name="signupForm">
+          <div class="input-field-container">
+            <div
+              class="input-container"
+              onfocus="focused(this);"
+              onclick="focused(this);"
+            >
+              <div class="top"></div>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="First Name"
+              />
+              <img src="./images/icon-error.svg" alt="" class="error-icon" />
+            </div>
+            <p class="errorLabel" for="fname" id="fnameLabel">
+              <em>First name can't be empty</em>
+
+            </p>
+            </p>
           </div>
-          <div class="input-container">
-            <input
-              type="text"
-              name="lname"
-              id="lname"
-              placeholder="Last Name"
-            />
+
+          <div class="input-field-container">
+            <div
+              class="input-container"
+              onfocus="focused(this);"
+              onclick="focused(this);"
+            >
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="Last Name"
+              />
+              <img src="./images/icon-error.svg" alt="" class="error-icon" />
+            </div>
+            <p class="errorLabel" for="lname" id="lnameLabel"><em>Last name can't be empty</em></p>
           </div>
-          <div class="input-container">
-            <input type="text" name="email" id="email" placeholder="Email" />
+
+          <div class="input-field-container">
+            <div
+              class="input-container"
+              onfocus="focused(this);"
+              onclick="focused(this);"
+            >
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+              />
+              <img src="./images/icon-error.svg" alt="" class="error-icon" />
+            </div>
+            <p class="errorLabel" for="email" id="emailLabel"><em>Email can't be empty</em></p>
           </div>
-          <div class="input-container">
-            <input type="password" name="pwd" id="pwd" placeholder="Password" />
+
+          <div class="input-field-container">
+            <div
+              class="input-container"
+              onfocus="focused(this);"
+              onclick="focused(this);"
+            >
+              <input
+                type="password"
+                name="pwd"
+                id="pwd"
+                placeholder="Password"
+              />
+              <img src="./images/icon-error.svg" alt="" class="error-icon" />
+            </div>
+            <p class="errorLabel" for="pwd" id="pwdLabel"><em>Password can't be empty</em></p>
           </div>
-          <button type="submit">Claim your free trial</button>
+
+          <button
+            type="submit"
+            onclick="verify(event);"
+            onsubmit="verify(event);"
+          >
+            Claim your free trial
+          </button>
           <p class="tnc">
             By clicking on the button, you are agreeing to our
             <span><strong>Terms and Services</strong></span>
