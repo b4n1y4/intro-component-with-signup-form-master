@@ -152,7 +152,7 @@ button:hover {
     align-items: center;
     margin-top: 0;
   }
-  section {
+  div.area {
     width: 40%;
   }
 

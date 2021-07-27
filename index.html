@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" role="root">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,15 +26,15 @@
   </head>
   <body onload = "clrForm();">
     <div class="container">
-      <section class="text-area">
+      <div class="text-area area">
         <h1 class="main-head">Learn to code by watching others</h1>
         <p class="main-text">
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
         </p>
-      </section>
-      <section class="form-area">
+      </div>
+      <div class="form-area area">
         <div class="top-bar">
           <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
         </div>
@@ -54,7 +54,7 @@
               />
               <img src="./images/icon-error.svg" alt="" class="error-icon" />
             </div>
-            <p class="errorLabel" for="fname" id="fnameLabel">
+            <p class="errorLabel" id="fnameLabel">
               <em>First name can't be empty</em>
 
             </p>
@@ -75,7 +75,7 @@
               />
               <img src="./images/icon-error.svg" alt="" class="error-icon" />
             </div>
-            <p class="errorLabel" for="lname" id="lnameLabel"><em>Last name can't be empty</em></p>
+            <p class="errorLabel" id="lnameLabel"><em>Last name can't be empty</em></p>
           </div>
 
           <div class="input-field-container">
@@ -92,7 +92,7 @@
               />
               <img src="./images/icon-error.svg" alt="" class="error-icon" />
             </div>
-            <p class="errorLabel" for="email" id="emailLabel"><em>Email can't be empty</em></p>
+            <p class="errorLabel" id="emailLabel"><em>Email can't be empty</em></p>
           </div>
 
           <div class="input-field-container">
@@ -109,7 +109,7 @@
               />
               <img src="./images/icon-error.svg" alt="" class="error-icon" />
             </div>
-            <p class="errorLabel" for="pwd" id="pwdLabel"><em>Password can't be empty</em></p>
+            <p class="errorLabel" id="pwdLabel"><em>Password can't be empty</em></p>
           </div>
 
           <button
