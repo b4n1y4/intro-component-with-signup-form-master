@@ -36,9 +36,12 @@ Users should be able to:
 
 ### Screenshot
 
-Desktop-layout: (./screenshots/desktop-layout.png)
-Active-state: (./screenshots/active-states.png)
-Mobile-layout: (./screenshots/mobile-layout.png)
+Desktop-layout:
+![](./screenshots/desktop-layout.png)
+Active-state:
+![](./screenshots/active-states.png)
+Mobile-layout:
+![](./screenshots/mobile-layout.png)
 
 ### Links
 
